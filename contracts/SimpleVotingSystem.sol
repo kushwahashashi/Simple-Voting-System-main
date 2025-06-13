@@ -10,7 +10,7 @@ contract SimpleVoting {
         string description
         uint256 yesVotes;
         uint256 noVotes;
-        uint256 endTime;
+        uint256 endTime
         bool executed;
         bool canceled;
         uint256 votersCount;
@@ -35,6 +35,10 @@ contract SimpleVoting {
     event ProposalCreated(uint256 indexed proposalId, string description, uint256 endTime);
     event Voted(uint256 indexed proposalId, address indexed voter, bool vote, uint256 weight);
     event ProposalExecuted(uint256 indexed proposalId, bool passed);
+    event ProposalCanceled(uint256 indexed proposalId);
+    event VotingExtended(uint256 indexed proposalId, uint256 newEndTime); event ProposalExecuted(uint256 indexed proposalId, bool passed);
+    event ProposalCanceled(uint256 indexed proposalId);
+    event VotingExtended(uint256 indexed proposalId, uint256 newEndTime); event ProposalExecuted(uint256 indexed proposalId, bool passed);
     event ProposalCanceled(uint256 indexed proposalId);
     event VotingExtended(uint256 indexed proposalId, uint256 newEndTime);
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
