@@ -5,16 +5,7 @@ pragma solidity ^0.8.9;
  * @title SimpleVoting
  * @dev Voting system with proposals, voting, delegation, quorum, pause, and ownership controls.
  */
-contract SimpleVoting {
-    struct Proposal {
-        string description
-        uint256 yesVotes;
-        uint256 noVotes;
-        uint256 endTime
-        bool executed;
-        bool canceled;
-        uint256 votersCount;
-        mapping(address => bool) hasVoted;
+c
     }
 
     address public owner;
