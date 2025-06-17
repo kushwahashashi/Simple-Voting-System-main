@@ -3,10 +3,7 @@ pragma solidity ^0.8.9;
 
 /**
  * @title SimpleVoting
- * @dev Voting system with proposals, voting, delegation, quorum, pause, and ownership controls.
- */
-c
-    }
+ * @dev Voting system with proposals, voting, delegation, quorum, pause, and ownership controls
 
     address public owner;
     uint256 public proposalCount;
