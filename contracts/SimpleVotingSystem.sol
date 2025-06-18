@@ -18,7 +18,7 @@ pragma solidity ^0.8.9;
     // Minimum votes required for quorum (yes + no)
     uint256 public quorum;
 
-    mapping(uint256 => Proposal) private proposals;
+    mapping(uint256 => Proposal) private proposa
 
     event ProposalCreated(uint256 indexed proposalId, string description, uint256 endTime);
     event Voted(uint256 indexed proposalId, address indexed voter, bool vote, uint256 weight);
