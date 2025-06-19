@@ -12,9 +12,6 @@ pragma solidity ^0.8.9;
     // Voting weights per address (default 1)
     mapping(address => uint256) public votingWeights;
 
-    // Delegation mapping: voter => delegate
-    mapping(address => address) public delegation;
-
     // Minimum votes required for quorum (yes + no)
     uint256 public quorum;
 
