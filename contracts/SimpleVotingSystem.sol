@@ -96,12 +96,7 @@ pragma solidity ^0.8.9;
         return proposalId;
     }
 
-    /**
-     * @dev Cast a vote on a proposal
-     */
-    function vote(uint256 _proposalId, bool _vote) public whenNotPaused {
-        require(_proposalId > 0 && _proposalId <= proposalCount, "Invalid proposal ID");
-
+  
         Proposal storage proposal = proposals[_proposalId];
 
         require(!proposal.canceled, "Proposal canceled");
