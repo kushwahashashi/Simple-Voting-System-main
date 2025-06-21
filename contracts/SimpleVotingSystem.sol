@@ -121,7 +121,7 @@ pragma solidity ^0.8.9;
             proposal.noVotes += weight;
         }
 
-        emit Voted(_proposalId, actualVoter, _vote, weight);
+        
     }
 
     /**
