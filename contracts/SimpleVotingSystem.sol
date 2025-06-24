@@ -29,7 +29,7 @@ pragma solidity ^0.8.9;
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
     event Paused();
     event Unpaused();
-    event Delegated(address indexed voter, address indexed delegate);
+    event Delegated(address indexed voter, address indexed delegate)
     event DelegationRevoked(address indexed voter);
 
     modifier onlyOwner() {
